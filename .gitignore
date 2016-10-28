@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/packages
+/MvcApp/bin
+/MvcApp/obj/Debug

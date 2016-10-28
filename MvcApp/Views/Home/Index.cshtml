@@ -3,7 +3,20 @@
 }
 
 <div class="jumbotron text-center">
-    <h1>Hello!</h1>
+    <h1 id="helloId">Hello!</h1>
     <p class="lead">My name is Russ! Welcome to my blog!</p>
-    <p><a href="http://google.com" class="btn btn-primary btn-lg">About Me</a></p>
+    <p><button id="myButton" class="btn btn-primary btn-lg">Hide Hello</button></p>
 </div>
+
+<script type="text/javascript">
+    $("#myButton").click(function () {
+        if ($("#helloId").is(":visible")) {
+            $("#helloId").slideUp("slow");
+            $("#myButton").text('Show Hello');
+        } else {
+            $("#helloId").slideDown("slow");
+            $("#myButton").text('Hide Hello');
+
+        }
+    });
+</script>
